@@ -1,6 +1,5 @@
 package com.joshuadavid.funfacts;
 
-import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +12,7 @@ import android.widget.TextView;
 public class FunFactsActivity extends ActionBarActivity {
 
     private FactBook mFactBook = new FactBook();
+    private ColorWheel mColorWheel = new ColorWheel();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,10 @@ public class FunFactsActivity extends ActionBarActivity {
                 // Update the label with dynamic fact
 
                 factLabel.setText(fact);
-                relativeLayout.setBackgroundColor(Color.RED);
+
+                int color = mColorWheel.getColor();
+
+                relativeLayout.setBackgroundColor(color);
 
             }
         };
