@@ -38,6 +38,7 @@
         android:layout_marginTop="187dp"
         android:layout_alignParentBottom="true"
         android:textSize="18sp"
-        android:background="@android:color/white" />
+        android:background="@android:color/white"
+        android:textColor="#ff51b46d" />
 
 </RelativeLayout>
