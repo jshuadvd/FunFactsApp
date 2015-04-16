@@ -42,8 +42,6 @@ public class FunFactsActivity extends ActionBarActivity {
                 relativeLayout.setBackgroundColor(color);
                 showFactButton.setTextColor(color);
 
-
-
             }
         };
         showFactButton.setOnClickListener(listener);
